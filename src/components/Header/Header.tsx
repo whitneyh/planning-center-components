@@ -17,7 +17,11 @@
 import React from "react"
 import "./Header.css"
 
-const Header = () => {
+export interface HeaderProps {
+
+}
+
+const Header = (props: HeaderProps) => {
     return <span>Hello!</span>
 }
 
