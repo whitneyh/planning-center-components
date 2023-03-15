@@ -1,0 +1,19 @@
+{
+  "name": "planning-center-components",
+  "version": "0.0.1",
+  "description": "React components that mimic the Planning Center UX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/whitneyh/planning-center-components.git"
+  },
+  "author": "Whitney Hunter",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/whitneyh/planning-center-components/issues"
+  },
+  "homepage": "https://github.com/whitneyh/planning-center-components#readme"
+}
