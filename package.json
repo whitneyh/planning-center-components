@@ -1,5 +1,5 @@
 {
-  "name": "planning-center-components",
+  "name": "@whitneyh/planning-center-components",
   "version": "0.0.1",
   "description": "React components that mimic the Planning Center UX",
   "scripts": {
@@ -35,5 +35,8 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "tslib": "^2.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/whitneyh"
   }
 }
