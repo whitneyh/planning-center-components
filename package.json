@@ -59,6 +59,10 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
     "tslib": "^2.5.0"
   },
   "publishConfig": {

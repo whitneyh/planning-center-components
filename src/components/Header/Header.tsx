@@ -16,13 +16,31 @@
 
 import React from "react"
 import "./Header.css"
+import {Box, Button} from "@mui/material";
 
 export interface HeaderProps {
 
 }
 
 const Header = (props: HeaderProps) => {
-    return <span>Hello!</span>
+    return (
+        <header className='app-header'>
+            <Box className='topbar-container'>
+                <Box className='simple' sx={{
+                    alignItems: 'center',
+                    color: 'white',
+                    display: 'flex',
+                    height: '48px',
+                    position: 'relative',
+                    paddingLeft: '8px',
+                    paddingRight: '24px',
+                    zIndex: '1000'
+                }}>
+                    <Button sx={{color: 'inherit'}}>Security</Button>
+                </Box>
+            </Box>
+        </header>
+    )
 }
 
 export default Header
