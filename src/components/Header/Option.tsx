@@ -14,13 +14,29 @@
  * limitations under the License.
  */
 
-.app-header {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    flex-basis: 48px;
-    flex-shrink: 0;
-    background-color: #6a9639;
+import React from "react"
+import "./Option.css"
+
+export interface OptionProps {
+    label: string,
+    clickHandler: (e: any) => void
 }
 
-.topbar-container {
-    max-width: none;
+const Option = (props: OptionProps) => {
+    const highlight = (e: any) => {
+        console.log('==> e', e)
+        e.target.style.backgroundColor = 'rgb(85, 134, 51)'
+    }
+
+    const unhighlight = (e: any) => {
+        e.target.style.backgroundColor = 'transparent'
+    }
+
+    return (
+        <a onClick={props.clickHandler} onMouseOver={highlight} onMouseLeave={unhighlight}>
+            {props.label}
+        </a>
+    )
 }
+
+export default Option

@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-.app-header {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    flex-basis: 48px;
-    flex-shrink: 0;
-    background-color: #6a9639;
-}
-
-.topbar-container {
-    max-width: none;
+a {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 4px;
+    border-radius: 9999px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: background-color 120ms ease-in 0s;
 }

@@ -17,6 +17,7 @@
 import React from "react"
 import "./Header.css"
 import {Box, Button} from "@mui/material";
+import Option from "./Option";
 
 export interface HeaderProps {
 
@@ -36,7 +37,12 @@ const Header = (props: HeaderProps) => {
                     paddingRight: '24px',
                     zIndex: '1000'
                 }}>
-                    <Button sx={{color: 'inherit'}}>Security</Button>
+                    <Button sx={{
+                        color: 'inherit',
+                        padding: '0 16px',
+                    }}>Security</Button>
+                    <Option label='Team Guide' clickHandler={(e) => console.log('team guide', e)}/>
+                    <Option label='Sunday Checklist' clickHandler={(e) => console.log('checklist', e)}/>
                 </Box>
             </Box>
         </header>
