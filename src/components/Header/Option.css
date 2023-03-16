@@ -15,7 +15,6 @@
  */
 
 a {
-    background-color: transparent;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -28,3 +27,4 @@ a {
     text-transform: capitalize;
     transition: background-color 120ms ease-in 0s;
 }
+

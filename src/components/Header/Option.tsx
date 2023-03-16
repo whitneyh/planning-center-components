@@ -19,21 +19,22 @@ import "./Option.css"
 
 export interface OptionProps {
     label: string,
-    clickHandler: (e: any) => void
+    isSelected: boolean,
+    backgroundColor: string,
+    backgroundHighlightColor: string,
+    clickHandler: (e: any) => void,
 }
 
 const Option = (props: OptionProps) => {
-    const highlight = (e: any) => {
-        console.log('==> e', e)
-        e.target.style.backgroundColor = 'rgb(85, 134, 51)'
-    }
-
-    const unhighlight = (e: any) => {
-        e.target.style.backgroundColor = 'transparent'
-    }
-
     return (
-        <a onClick={props.clickHandler} onMouseOver={highlight} onMouseLeave={unhighlight}>
+        <a style={{backgroundColor: props.isSelected ? props.backgroundHighlightColor : props.backgroundColor}}
+           onClick={props.clickHandler}
+           onMouseOver={(e: any) => e.target.style.backgroundColor = props.backgroundHighlightColor}
+           onMouseLeave={(e: any) => {
+               if (!props.isSelected) {
+                   e.target.style.backgroundColor = props.backgroundColor
+               }
+           }}>
             {props.label}
         </a>
     )
