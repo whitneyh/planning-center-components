@@ -15,5 +15,5 @@
  */
 
 export {default as Header} from "./Header"
-export {default as LoginToggle} from "./LoginToggle"
+export {default as LoginToggle} from "./UserOptions"
 export {default as MenuOption} from "./MenuOption"

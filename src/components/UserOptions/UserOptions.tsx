@@ -15,25 +15,27 @@
  */
 
 import React from "react"
-import "./LoginToggle.css"
+import "./UserOptions.css"
 
 export interface LoginProps {
 
 }
 
-const LoginToggle = (props: LoginProps) => {
+const UserOptions = (props: LoginProps) => {
     return (
-        <button>
+        <button onMouseOver={(e: any) => e.target.style.backgroundColor = '#487813'}
+                onMouseLeave={(e: any) => e.target.style.backgroundColor = '#558633'}>
             <div className='image'></div>
             <div className='margin'></div>
             <div className='padding-right'>
-                <svg color="#264703" height="16" viewBox="0 0 16 16" width="16" style={{margin: '-3px;'}}>
+                <svg color="#264703" height="16" viewBox="0 0 16 16" width="16" style={{margin: '-3px'}}>
                     <title>chevron</title>
-                    <polygon fill="currentColor" points="11.931 4.892 8 8.824 4.069 4.892 2.927 6.034 8 11.108 9.142 9.966 13.073 6.034 11.931 4.892"></polygon>
+                    <polygon fill="currentColor"
+                             points="11.931 4.892 8 8.824 4.069 4.892 2.927 6.034 8 11.108 9.142 9.966 13.073 6.034 11.931 4.892"></polygon>
                 </svg>
             </div>
         </button>
     )
 }
 
-export default LoginToggle
+export default UserOptions

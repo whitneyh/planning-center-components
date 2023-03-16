@@ -18,7 +18,7 @@ import React, {useState} from "react"
 import "./Header.css"
 import {Box, Button} from "@mui/material";
 import MenuOption from "../MenuOption";
-import LoginToggle from "../LoginToggle";
+import UserOptions from "../UserOptions";
 
 export interface HeaderProps {
 
@@ -56,7 +56,7 @@ const Header = (props: HeaderProps) => {
                         backgroundHighlightColor='rgb(85, 134, 51)'
                         clickHandler={(e) => setSelected('sunday-checklist')}/>
                     <Box sx={{margin: 'auto'}}/>
-                    <LoginToggle/>
+                    <UserOptions/>
                 </Box>
             </Box>
         </header>
