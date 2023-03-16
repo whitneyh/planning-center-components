@@ -15,7 +15,7 @@
  */
 
 import React from "react"
-import "./Option.css"
+import "./MenuOption.css"
 
 export interface OptionProps {
     label: string,
@@ -25,7 +25,7 @@ export interface OptionProps {
     clickHandler: (e: any) => void,
 }
 
-const Option = (props: OptionProps) => {
+const MenuOption = (props: OptionProps) => {
     return (
         <a style={{backgroundColor: props.isSelected ? props.backgroundHighlightColor : props.backgroundColor}}
            onClick={props.clickHandler}
@@ -40,4 +40,4 @@ const Option = (props: OptionProps) => {
     )
 }
 
-export default Option
+export default MenuOption

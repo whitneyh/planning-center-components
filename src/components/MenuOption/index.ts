@@ -14,6 +14,4 @@
  * limitations under the License.
  */
 
-export {default as Header} from "./Header"
-export {default as LoginToggle} from "./LoginToggle"
-export {default as MenuOption} from "./MenuOption"
+export {default} from "./MenuOption"

@@ -17,7 +17,8 @@
 import React, {useState} from "react"
 import "./Header.css"
 import {Box, Button} from "@mui/material";
-import Option from "./Option";
+import MenuOption from "../MenuOption";
+import LoginToggle from "../LoginToggle";
 
 export interface HeaderProps {
 
@@ -42,18 +43,20 @@ const Header = (props: HeaderProps) => {
                         color: 'inherit',
                         padding: '0 16px',
                     }}>Security</Button>
-                    <Option
+                    <MenuOption
                         label='Team Guide'
                         isSelected={selected === 'team-guide'}
                         backgroundColor='transparent'
                         backgroundHighlightColor='#558633'
                         clickHandler={(e) => setSelected('team-guide')}/>
-                    <Option
+                    <MenuOption
                         label='Sunday Checklist'
                         isSelected={selected === 'sunday-checklist'}
                         backgroundColor='transparent'
                         backgroundHighlightColor='rgb(85, 134, 51)'
                         clickHandler={(e) => setSelected('sunday-checklist')}/>
+                    <Box sx={{margin: 'auto'}}/>
+                    <LoginToggle/>
                 </Box>
             </Box>
         </header>
